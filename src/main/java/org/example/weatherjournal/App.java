@@ -2,7 +2,8 @@ package org.example.weatherjournal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-// import ...
+import org.springframework.context.annotation.Configuration;
+
 
 @SpringBootApplication
 @Configuration
