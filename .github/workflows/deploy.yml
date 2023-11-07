@@ -20,6 +20,6 @@ jobs:
 
     - name: Deploy to DigitalOcean
       run: |
-        mkdir -pv ~/.ssh/known_hosts
+        mkdir -pv ~/.ssh
         cat <<< "${{ secrets.HOST_KEY }}" >> ~/.ssh/known_hosts
         rsync -avz --delete --exclude='.git*' --exclude='.github*' ./ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:/apps/WeatherJournal
